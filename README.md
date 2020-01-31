@@ -8,7 +8,7 @@
 
 Generate nice and cute logotypes in periodic element style. 
 
-[Try it online](https://reddec.github.com/element-logo-generator)
+[Try it online](https://reddec.net/demo/element-logo-generator/public/)
 
 * Build on SvelteJS platform - easy to embedded, lightweight and fast
 * Support SVG and PNG export
