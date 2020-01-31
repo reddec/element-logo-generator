@@ -34,7 +34,7 @@
      {width} {height} viewBox="0 0 {width} {height}"
      stroke-linecap="round" stroke-linejoin="round">
     <defs>
-        <style type="text/css">@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono);</style>
+        <style type="text/css">@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono);</style>
     </defs>
     <rect {width} {height} fill="{background}" rx="{radius}" ry="{radius}"/>
     <text x="10" y="{textOffset}"
