@@ -73,10 +73,10 @@
         </div>
         <div style="flex-grow: 1">
             <ElementLogo {symbol} {name} {tags}
-                     on:input="{updated}"
-                     text="{textColor}"
-                     background="{backgroundColor}"
-                     tile="{tagColor}"/>
+                         on:input="{updated}"
+                         text="{textColor}"
+                         background="{backgroundColor}"
+                         tile="{tagColor}"/>
             <div style="padding-top: 3em">
                 <button on:click={saveAsSVG}>save as SVG</button>
                 <button on:click={saveAsPNG}>save as PNG</button>
@@ -88,19 +88,19 @@
                     Background color
                 </label>
                 <input bind:value={backgroundColor}/>
-                <Picker color="{backgroundColor}"/>
+                <Picker bind:value="{backgroundColor}"/>
 
                 <label>
                     Tag color
                 </label>
                 <input bind:value={tagColor} maxlength="14"/>
-                <Picker color="{tagColor}"/>
+                <Picker bind:value="{tagColor}"/>
 
                 <label>
                     Text color
                 </label>
                 <input bind:value={textColor}/>
-                <Picker color="{textColor}"/>
+                <Picker bind:value="{textColor}"/>
 
             </form>
         </div>

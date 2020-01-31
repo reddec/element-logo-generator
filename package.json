@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "file-saver": "^2.0.2",
-    "sirv-cli": "^0.4.4"
+    "sirv-cli": "^0.4.4",
+    "svelte-color-picker": "^1.0.7"
   }
 }
