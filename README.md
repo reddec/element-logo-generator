@@ -13,3 +13,12 @@ Generate nice and cute logotypes in periodic element style.
 * Build on SvelteJS platform - easy to embedded, lightweight and fast
 * Support SVG and PNG export
 * Support customization 
+
+
+It's possible to embed it
+
+```html
+<element-logo symbol="Fa" name="fluent-amqp" tags="go,CLI,lib" background="#400000" tile="#a02c2c">
+  <script defer src="https://cdn.jsdelivr.net/gh/reddec/element-logo-generator@1/dist/element-logo.min.js"></script>
+</element-logo>
+```

@@ -1,3 +1,5 @@
+<svelte:options tag="element-logo"/>
+
 <script>
     import {afterUpdate, createEventDispatcher} from 'svelte';
 
@@ -27,6 +29,7 @@
     $: textOffset = 20;
     $: tileWidth = (fontTileSize / 2) * 3 + 4;
     $: tileHeight = (fontTileSize + 4);
+    $: parsedTags = Array.isArray(tags) ? tags: tags.split(',').map((x) => x.trim());
 </script>
 <svg xmlns="http://www.w3.org/2000/svg"
      bind:this={svg}
@@ -44,7 +47,7 @@
           font-style="normal"
           font-family="Ubuntu Mono"
     >{symbol.substr(0,2)}</text>
-    {#each tags.filter((x)=>x.length > 0).slice(0, 3) as tag,index}
+    {#each parsedTags.filter((x)=>x.length > 0).slice(0, 3) as tag,index}
         <g transform="translate({width - fontTileSize - 32}, {20 + ((fontTileSize + tilePad) * index)})">
             <rect width="{tileWidth}"
                   height="{tileHeight}"

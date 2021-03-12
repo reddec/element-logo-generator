@@ -1,10 +1,5 @@
-import App from './App.svelte';
+import ElementLogoPlayground from './ElementLogoPlayground.svelte';
 
-const app = new App({
-	target: document.body,
-	props: {
-		name: 'world'
-	}
-});
-
-export default app;
+window.ElementLogoPlayground = function (options) {
+    return new ElementLogoPlayground(options)
+}

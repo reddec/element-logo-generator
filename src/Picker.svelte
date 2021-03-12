@@ -1,3 +1,4 @@
+<svelte:options tag={null}/>
 <script>
     import {HsvPicker} from 'svelte-color-picker';
     import {createEventDispatcher} from 'svelte';
